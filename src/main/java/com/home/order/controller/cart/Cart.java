@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Cart implements CartEndpoint{
     @Override
-    public ResponseEntity createCard() {
+    public ResponseEntity<OrderDTO> ResponseEntity createCard(OrderDTO orderDTO) {
         return null;
     }
 }

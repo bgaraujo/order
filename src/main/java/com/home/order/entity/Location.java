@@ -1,25 +1,21 @@
 package com.home.order.entity;
 
-import com.home.order.enums.StatusEnum;
 import lombok.Data;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import java.util.List;
+import java.math.BigDecimal;
 
-@Data
 @Entity
-public class Order {
+@Data
+public class Location {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private Long user_id;
-    private StatusEnum status;
-    private ShippingAddress deliveryAddress;
-    private List<Item> itens;
-    private Discount discount; //ToDO create discount service
-
+    private BigDecimal lat;
+    private BigDecimal lng;
 
 }

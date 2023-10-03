@@ -8,5 +8,5 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public interface CartEndpoint {
 
     @PostMapping
-    ResponseEntity createCard();
+    ResponseEntity<OrderDTO> createCard();
 }
