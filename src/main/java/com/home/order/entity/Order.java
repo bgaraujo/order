@@ -15,7 +15,7 @@ public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private Long user_id;
+    private Long userId;
     private StatusEnum status;
     private ShippingAddress deliveryAddress;
     private List<Item> itens;
